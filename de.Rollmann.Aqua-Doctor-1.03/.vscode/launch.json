@@ -1,0 +1,67 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "java",
+			"name": "Debug (Launch)-StartKlasse<Aqua-Doctor>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"console": "internalConsole",
+			"stopOnEntry": false,
+			"mainClass": "Aqua_Doctor.StartKlasse",
+			"projectName": "Aqua-Doctor",
+			"args": ""
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-TestSuite<jtermios>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"console": "internalConsole",
+			"stopOnEntry": false,
+			"mainClass": "jtermios.windows.testsuite.TestSuite",
+			"projectName": "Aqua-Doctor",
+			"args": ""
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-TestSuite<purejavacomm>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"console": "internalConsole",
+			"stopOnEntry": false,
+			"mainClass": "purejavacomm.testsuite.TestSuite",
+			"projectName": "Aqua-Doctor",
+			"args": "COM3"
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-PureJavaCommDemo<Aqua-Doctor>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"console": "internalConsole",
+			"stopOnEntry": false,
+			"mainClass": "purejavacomm.testsuite.PureJavaCommDemo",
+			"projectName": "Aqua-Doctor",
+			"args": ""
+		},
+		{
+			"type": "java",
+			"name": "Debug (Launch)-Demo<JTermios>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"console": "internalConsole",
+			"stopOnEntry": false,
+			"mainClass": "jtermios.testsuite.TestSuite",
+			"projectName": "Aqua-Doctor",
+			"args": ""
+		},
+		{
+			"type": "java",
+			"name": "Debug (Attach)",
+			"request": "attach",
+			"hostName": "localhost",
+			"port": 0
+		}
+	]
+}
