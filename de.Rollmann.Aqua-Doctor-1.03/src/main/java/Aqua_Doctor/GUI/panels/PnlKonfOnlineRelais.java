@@ -23,7 +23,11 @@ import javax.swing.event.ChangeListener;
 public class PnlKonfOnlineRelais
   extends KonfigPanel
 {
-  public JLabel lblRelais = new JLabel();
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7415489492609191591L;
+public JLabel lblRelais = new JLabel();
   public JLabel lblBezRelais = new JLabel();
   public JLabel lblNachlaufWert = new JLabel();
   public JLabel lblEin = new JLabel();
@@ -96,7 +100,7 @@ public class PnlKonfOnlineRelais
       jbInit();
       setzeSprache();
     }
-    catch (Exception localException) {}
+    catch (Exception e) {}
   }
   
   public void setzeKonfig(Daten c)

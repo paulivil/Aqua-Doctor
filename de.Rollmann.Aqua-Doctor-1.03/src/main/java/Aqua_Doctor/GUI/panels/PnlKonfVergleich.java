@@ -15,7 +15,11 @@ import javax.swing.border.TitledBorder;
 public class PnlKonfVergleich
   extends KonfigPanel
 {
-  public JLabel lblName1 = new JLabel();
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6710511080677836252L;
+public JLabel lblName1 = new JLabel();
   public JLabel lblSensor1V1 = new JLabel();
   public JLabel lblSensor2V1 = new JLabel();
   public JLabel lblName2 = new JLabel();
@@ -53,7 +57,7 @@ public class PnlKonfVergleich
       jbInit();
       setzeSprache();
     }
-    catch (Exception localException) {}
+    catch (Exception e) {}
   }
   
   public void aktualisiere()

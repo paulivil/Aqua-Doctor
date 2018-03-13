@@ -19,7 +19,11 @@ import javax.swing.border.TitledBorder;
 public class PnlKonfSensor
   extends KonfigPanel
 {
-  public JLabel lblSensor = new JLabel();
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8847521801030141277L;
+public JLabel lblSensor = new JLabel();
   public JLabel lblBezeichnung = new JLabel();
   public JLabel lblStatus = new JLabel();
   public JLabel lblNotAusStatus = new JLabel();
@@ -80,7 +84,7 @@ public class PnlKonfSensor
       jbInit();
       setzeSprache();
     }
-    catch (Exception localException) {}
+    catch (Exception e) {}
   }
   
   public void setzeKonfig(Daten c)

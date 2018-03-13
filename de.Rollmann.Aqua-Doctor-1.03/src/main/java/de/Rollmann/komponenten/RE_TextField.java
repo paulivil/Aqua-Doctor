@@ -10,7 +10,11 @@ public class RE_TextField
   extends JTextField
   implements KeyListener
 {
-  private int count = 0;
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2320988558485370414L;
+private int count = 0;
   private int maxCount;
   
   public RE_TextField(int Anzahl)

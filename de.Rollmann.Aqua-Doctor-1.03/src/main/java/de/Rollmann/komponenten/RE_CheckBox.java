@@ -6,7 +6,12 @@ import javax.swing.JCheckBox;
 public class RE_CheckBox
   extends JCheckBox
 {
-  public void aktualisiere()
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7421184503784971994L;
+
+public void aktualisiere()
   {
     super.fireActionPerformed(new ActionEvent(this, 0, 
       getActionCommand()));

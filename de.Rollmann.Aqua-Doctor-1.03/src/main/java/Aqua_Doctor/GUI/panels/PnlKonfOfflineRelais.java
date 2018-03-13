@@ -19,7 +19,11 @@ import javax.swing.event.ChangeListener;
 public class PnlKonfOfflineRelais
   extends KonfigPanel
 {
-  public JLabel lblStandardSchema = new JLabel();
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5531437664264379632L;
+public JLabel lblStandardSchema = new JLabel();
   public JLabel lblVerz1 = new JLabel();
   public JLabel lblVerz1Wert = new JLabel();
   public JLabel lblSchalt1 = new JLabel();
@@ -110,7 +114,7 @@ public class PnlKonfOfflineRelais
       jbInit();
       setzeSprache();
     }
-    catch (Exception localException) {}
+    catch (Exception e) {}
   }
   
   public void setzeKonfig(Daten c)

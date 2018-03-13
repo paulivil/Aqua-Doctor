@@ -7,7 +7,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
+import java.io.RandomAccessFile;
 import java.io.StringWriter;
 
 import javax.swing.UIManager;
@@ -55,10 +57,14 @@ public class StartKlasse
   
   public void ladeProfil()
   {
+	  ObjectInputStream oi = null;
     try
     {
-      FileInputStream disk = new FileInputStream("Profil.dat");
-      ObjectInputStream oi = new ObjectInputStream(disk);
+    	RandomAccessFile f = new RandomAccessFile("Profil.dat", "rw");
+      
+      FileInputStream disk = new FileInputStream(f.getFD());
+      oi = new ObjectInputStream(disk);
+     
       cfg = ((Daten)oi.readObject());
       oi.close();
     }
@@ -81,11 +87,12 @@ public class StartKlasse
   
   public void ladeInit()
   {
-    
+	  ObjectInputStream oi = null;
     try
     {
-      FileInputStream disk = new FileInputStream("Aqua_Doctor.dat");
-      ObjectInputStream oi= new ObjectInputStream(disk);
+    	RandomAccessFile f = new RandomAccessFile("Aqua_Doctor.dat", "rw");
+    	FileInputStream disk = new FileInputStream(f.getFD());
+           oi= new ObjectInputStream(disk);
       oi.close();
     }
     catch (Exception e) {}

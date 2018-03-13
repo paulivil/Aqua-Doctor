@@ -9,7 +9,11 @@ public abstract class DialogFortschritt
   extends JDialog
   implements Runnable
 {
-  protected JLabel lblText = new JLabel();
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6187564147428564505L;
+protected JLabel lblText = new JLabel();
   protected JLabel lblWert = new JLabel();
   protected Thread t = new Thread(this);
   protected int Wert;
