@@ -31,7 +31,7 @@ protected int maxCount = 10;
     {
       dateFormat.setMask("##:##");
     }
-    catch (ParseException localParseException) {}
+    catch (ParseException e) {}
     setFormatter(dateFormat);
     setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
     setHorizontalAlignment(4);
@@ -90,7 +90,7 @@ protected int maxCount = 10;
         }
         str = df.format(Long.valueOf(dd.getTime()));
       }
-      catch (NumberFormatException localNumberFormatException) {}
+      catch (NumberFormatException e1) {}
     }
   }
   

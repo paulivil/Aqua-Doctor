@@ -178,7 +178,7 @@ public String geraet;
           butSpeichern.setEnabled(true);
         }
       }
-      catch (Exception localException2) {}
+      catch (Exception e1) {}
       setCursor(null);
     }
   }

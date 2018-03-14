@@ -1212,7 +1212,7 @@ public JLabel lblLuefterAuswahl = new JLabel();
           sliStartVolt.removeAllSliListeners();
           sliMaxVolt.removeAllSliListeners();
         }
-        catch (Exception localException) {}
+        catch (Exception e1) {}
         sliStartVolt.addChangeListener(startWertSpanLis);
         sliStartVolt.setValue(cfg.LUEFTER_STARTWERT_SPANNUNG[
           cfg.LUEFTER_AUSWAHL]);
@@ -1238,7 +1238,7 @@ public JLabel lblLuefterAuswahl = new JLabel();
             sliStartDreh.removeAllSliListeners();
             sliMaxDreh.removeAllSliListeners();
           }
-          catch (Exception localException1) {}
+          catch (Exception e1) {}
           sliStartDreh.addChangeListener(startWertDrehLis);
           sliStartDreh.setValue(cfg.LUEFTER_STARTWERT_DREHZAHL[
             cfg.LUEFTER_AUSWAHL]);

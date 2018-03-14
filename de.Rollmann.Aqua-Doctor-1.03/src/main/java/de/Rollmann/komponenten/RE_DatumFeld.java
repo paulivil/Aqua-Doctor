@@ -123,7 +123,7 @@ protected int maxCount = 5;
           }
           str = str.substring(0, 2) + ":" + str.substring(2);
         }
-        catch (Exception localException) {}
+        catch (Exception e) {}
         Date dd;
         try
         {
@@ -141,7 +141,7 @@ protected int maxCount = 5;
         str = df.format(Long.valueOf(dd.getTime()));
       }
     }
-    catch (NumberFormatException localNumberFormatException) {}
+    catch (NumberFormatException e) {}
     setText(str);
     
     setBorder(myBorder);
